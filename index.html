@@ -1,0 +1,415 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/assets/styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script> 
+</head>
+
+<body>
+  
+    <section class="py-16 bg-neutral-900">
+
+        <div class="container max-w-screen-xl mx-auto px-4">
+
+            <nav class="flex-wrap lg:flex items-center justify-between mb-24 xl:mb-48 sticky top-0 z-30" x-data="{navbarOpen:false}">
+                <div class="flex items-center mb-10 lg:mb-0">
+                    <img src="assets/image/tabtechmw.png" alt="Logo tabtech malawi" class="h-12">
+
+                    <button class="w-10 h-10 lg:hidden ml-auto flex items-center justify-center text-orange-800 border border-orange-800 rounded-md" @click="navbarOpen = !navbarOpen">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+
+                <ul class="lg:flex flex-col lg:flex-row lg:items-center lg:space-x-20 mb-10 xl:mb-0" :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
+                    <li class="font-medium text-gray-500 text-lg hover:text-gray-400 transiton ease-in-out duration-300 mb-5 lg:mb-0">
+                        <a href="#">Services</a>
+                    </li>
+                    <li class="font-medium text-gray-500 text-lg hover:text-gray-400 transiton ease-in-out duration-300 mb-5 lg:mb-0">
+                        <a href="#">Works</a>
+                    </li>
+                    <li class="font-medium text-gray-500 text-lg hover:text-gray-400 transiton ease-in-out duration-300 mb-5 lg:mb-0">
+                        <a href="#">About us</a>
+                    </li>
+                    <li class="px-8 py-3 font-medium text-orange-800 text-lg text-center border-2 border-orange-800 rounded-md hover:bg-orange-800 hover:text-white transiton ease-linear duration-300">
+                        <a href="#">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <header class="flex flex-col lg:flex-row justify-between lg:mb-20">
+                <div class="text-center lg:text-left mb-20 lg:mb-0">
+                    <div class="flex items-center justify-center lg:justify-start gap-2 mb-10">
+                        <span class="w-20 h-0.5 bg-orange-700"></span>
+
+                        <p class="font-medium text-orange-700 text-xl">Tabtech Systems Link & Consultants</p>
+                    </div>
+
+                    <h1 class="font-bold text-white text-4xl md:text-6xl xl:text-7xl mb-10">Implementing ICT <br> Solutions</h1>
+
+                    <p class="font-normal text-gray-500 text-sm md:text-md xl:text-lg mb-10">Hi, Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant <br> Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant <br> with us.</p>
+
+                    <div class="space-y-5 lg:space-x-5 mb-10">
+                        <a href="#" class="block md:inline px-8 py-3 font-medium bg-orange-800 text-white text-lg rounded-md hover:bg-orange-600 transiton ease-in-out duration-300">Hire us</a>
+                        
+                        <a href="#" class="block md:inline px-8 py-3 font-medium text-orange-800 text-lg border-2 border-orange-800 rounded-md hover:bg-orange-600 hover:text-white transiton ease-linear duration-300">Read more</a>
+                    </div>
+
+                    <hr class="text-gray-500 mb-5">
+
+                    <span class="font-normal text-gray-500 text-sm">We are always open for work.</span>
+                </div>
+
+                <div class="w-96 mx-auto lg:mx-0">
+                    <img src="https://dummyimage.com/720x600" alt="Image">
+                </div>
+            </header>
+
+        </div> <!-- container.// -->
+
+    </section>
+    <!-- top hero & nav end -->
+
+    <!-- companies/clients -->
+    <section class="bg-neutral-800 py-16 lg:mb-">
+
+        <div class="container max-w-screen-xl mx-auto px-4">
+
+            <p class="font-normal text-gray-400 text-xl text-center lg:text-left mb-5">Trusted by top-tier organizations</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 ml-16 md:ml-24 lg:ml-0">
+                <img src="assets/image/alfabet.svg" alt="Image" class="mb-5 md:mb-10 xl:mb-0">
+                
+                <img src="assets/image/shopify.svg" alt="Image" class="mb-5 md:mb-10 xl:mb-0">
+                
+                <img src="assets/image/amazon.svg" alt="Image" class="mb-5 md:mb-0">
+                
+                <img src="assets/image/google.svg" alt="Image" class="mb-5 md:mb-0">
+                
+                <img src="assets/image/netflix.svg" alt="Image" class="mb-5 md:mb-0">
+            </div>
+
+        </div> <!-- container.// -->
+
+    </section>
+    <!-- end clients -->
+
+    <!-- about section -->
+    <section class="bg-neutral-800 py-10 md:py-16">
+
+        <div class="container max-w-screen-xl mx-auto px-4 xl:relative">
+
+            <!-- <p class="font-normal text-gray-400 text-lg md:text-xl text-center uppercase mb-6">Testimonial</p> -->
+
+            <!-- <h1 class="font-semibold text-gray-900 text-2xl md:text-4xl text-center leading-normal mb-14">What People Say <br> About us</h1> -->
+
+            <div class="hidden xl:block xl:absolute top-0">
+                <img src="assets/image/testimoni-1.png" alt="Image">
+            </div>
+
+            <div class="hidden xl:block xl:absolute top-32">
+                <img src="assets/image/testimoni-2.png" alt="Image">
+            </div>
+
+            <div class="flex flex-col md:flex-row md:items-center justify-center md:space-x-8 lg:space-x-12 mb-10 md:mb-20">
+
+                <div class="bg-neutral-700 rounded-lg mb-10 md:mb-0 md:w-96">
+                    <h1 class="font-semibold text-orange-600 text-xl md:text-2xl lg:text-3xl mx-8 my-16 mb-8">
+                        OUR VISION IS TO BE LEADERS IN IMPLEMENTING ICT SOLUTIONS & SUPPLY OF ICT RELATED EQUIPMENT.
+                    </h1>
+                </div>
+
+                <div class="bg-neutral-700 rounded-lg mb-10 md:mb-0 md:w-96">
+                    <img src="assets/image/testimoni-3.png" alt="Image" class="mx-8 my-5">
+
+                    <h3 class="font-semibold text-gray-50 text-xl md:text-2xl lg:text-3xl mx-8 mb-1">Our Mission</h3>
+                    <p class="font-normal text-md lg:text-md text-gray-400 mx-6 my-6">Our mission interprets technology developments in a practical manner that benefits our client's business and to implement every the process to its full potential be it in business systems, user training and in consultancy</p>
+
+                </div>
+
+                <div class="bg-neutral-700 rounded-lg md:w-96">
+                    <img src="assets/image/testimoni-4.png" alt="Image" class="mx-8 my-5">
+
+                    <h3 class="font-semibold text-gray-50 text-xl md:text-2xl lg:text-3xl mx-8 mb-1">Our Objective</h3>
+                    <p class="font-normal text-md lg:text-md text-gray-400 mx-6 my-6">To offer our services in a result-oriented environment where transparency and accountability form culture of teamwork, and for all innovations to be fully evaluated before recommendation to our clients.</p>
+
+                </div>
+
+            </div>
+
+        </div> <!-- container.// -->
+
+    </section>
+    <!-- about section //end -->
+
+    <!-- explore -->
+    <section class="bg-neutral-700 py-16 lg:mb-">
+
+        <div class="container max-w-screen-xl mx-auto px-4">
+            <h1 class="font-normal text-gray-300 text-3xl md:text-6xl lg:text-7xl mb-14 md:mb-24 lg:mb-48">Explore all our <span class="text-orange-600">products & services >></span></h1>
+            <!-- <h2 class="font-normal text-white text-xl text-center lg:text-left mb-5">Explore all of our <span class="text-orange-600"> products & services >></span></h2> -->
+
+        </div> <!-- container.// -->
+
+    </section>
+    <!-- end explore -->
+
+     <!-- gia section -->
+     <section class="bg-neutral-900 py-16">
+
+        <div class="container max-w-screen-xl mx-auto px-4">
+
+            <div class="flex flex-col lg:flex-row justify-between space-x-16">
+                <div class="flex justify-center lg:justify-start">
+                    <!-- <img src="assets/image/feature-img.png" alt="Image"> -->
+                </div>
+    
+                <div class="mt-16">
+                    <h1 class="font-semibold text-orange-700 text-xl md:text-4xl mb-20">Our gender inclusive approach.</h1>
+    
+                    <div class="grid grid-cols-1 md:grid-cols-2 md:space-x-20 mb-16">
+                        <div class="mb-5 md:mb-0">        
+                            <p class="font-light text-gray-100 text-md md:text-lg">We respect the role of women in its deliverables, we therefore adopted a 40%inclusive of women Policy in its strategic and management Team.</p>
+                        </div>
+        
+                        <div>        
+                            <p class="font-light text-gray-100 text-md md:text-lg">We have empowered women by levelling the working environment by offering training and upgrade packages to enhance women's carrier and build a resourceful team in all sectors thus Technical and management</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- container.// -->
+
+    </section>
+    <!-- gia section //end -->
+
+
+
+
+
+
+    <!-- our work/blog -->
+    <section class="mx-auto bg-neutral-900">
+        <div class="sm:max-w-lg max-w-md mx-auto text-center">
+          <h3 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">See some of our latest work</h3>
+          <p class="mt-1 text-base text-gray-500 leading-relaxed sm:mt-2 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-2 md:text-xl lg:mx-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim aliquid magni odit commodi quod explicabo rerum.</p>
+        </div>
+       
+        <div class=" relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
+            <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
+              <div class="p-6">
+                <img class=" object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="https://dummyimage.com/720x600" alt="blog">
+                <h1 class=" mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"> Short headline. </h1>
+                <p class="mx-auto text-base leading-relaxed text-gray-500"> Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js. </p>
+                <div class="mt-4">
+                  <a href="#" class=" inline-flex items-center mt-4 font-semibold text-orange-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
+                </div>
+              </div>
+              <div class="p-6">
+                <img class=" object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="https://dummyimage.com/720x600" alt="blog">
+                <h1 class=" mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"> Short headline. </h1>
+                <p class="mx-auto text-base leading-relaxed text-gray-500"> Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js. </p>
+                <div class="mt-4">
+                  <a href="#" class=" inline-flex items-center mt-4 font-semibold text-orange-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
+                </div>
+              </div>
+              <div class="p-6">
+                <img class=" object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="https://dummyimage.com/720x600" alt="blog">
+                <h1 class=" mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"> Short headline. </h1>
+                <p class="mx-auto text-base leading-relaxed text-gray-500"> Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js. </p>
+                <div class="mt-4">
+                  <a href="#" class=" inline-flex items-center mt-4 font-semibold text-orange-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- work/blog end -->
+  
+      <!-- team -->
+      <section class="mx-auto bg-neutral-900">
+        <div class="sm:max-w-lg max-w-md mx-auto text-center">
+          <h3 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Meet the team</h3>
+          <p class="mt-1 text-base text-gray-500 leading-relaxed sm:mt-2 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-2 md:text-xl lg:mx-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim aliquid magni odit commodi quod explicabo rerum.</p>
+        </div>
+       
+        <div class=" relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
+            <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
+              <div class="p-6">
+                <img class=" object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="https://dummyimage.com/720x600" alt="blog">
+                <h1 class=" mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"> Short headline. </h1>
+                <p class="mx-auto text-base leading-relaxed text-gray-500"> Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js. </p>
+                <div class="mt-4">
+                  <a href="#" class=" inline-flex items-center mt-4 font-semibold text-orange-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
+                </div>
+              </div>
+              <div class="p-6">
+                <img class=" object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="https://dummyimage.com/720x600" alt="blog">
+                <h1 class=" mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"> Short headline. </h1>
+                <p class="mx-auto text-base leading-relaxed text-gray-500"> Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js. </p>
+                <div class="mt-4">
+                  <a href="#" class=" inline-flex items-center mt-4 font-semibold text-orange-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
+                </div>
+              </div>
+              <div class="p-6">
+                <img class=" object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="https://dummyimage.com/720x600" alt="blog">
+                <h1 class=" mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl"> Short headline. </h1>
+                <p class="mx-auto text-base leading-relaxed text-gray-500"> Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js. </p>
+                <div class="mt-4">
+                  <a href="#" class=" inline-flex items-center mt-4 font-semibold text-orange-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- team -->
+
+
+
+
+
+
+    <!-- book section -->
+    <section class="bg-neutral-900 py-10 md:py-16">
+
+        <div class="container max-w-screen-xl mx-auto px-4 xl:relative">
+
+            <div class="bg-orange-800 flex flex-col lg:flex-row items-center justify-evenly py-14 rounded-3xl">
+
+                <div class="text-center lg:text-left mb-10 lg:mb-0">
+                    <h1 class="font-semibold text-white text-4xl md:text-5xl lg:text-7xl leading-normal mb-4">Talk to us <br> to discuss</h1>
+
+                    <p class="font-normal text-white text-md md:text-xl">Need more time to discuss? Won’t worry, we are <br> ready to help you. You can fill in the column on the <br> right to book a meeting with us. Totally free.</p>
+                </div>
+
+                <div class="hidden xl:block xl:absolute right-0">
+                    <img src="assets/image/book.png" alt="Image">
+                </div>
+
+                <div class="hidden md:block bg-white xl:relative px-6 py-3 rounded-3xl">
+                    <div class="py-3">
+                        <h3 class="font-semibold text-gray-900 text-3xl">Book a meeting</h3>
+                    </div>
+
+                    <div class="py-3">
+                        <input type="text" placeholder="Full Name" class="px-4 py-4 w-96 bg-gray-100 placeholder-gray-400 rounded-xl outline-none">
+                    </div>
+
+                    <div class="py-3">
+                        <input type="text" placeholder="Email" class="px-4 py-4 w-96 bg-gray-100 placeholder-gray-400 rounded-xl outline-none">
+                    </div>
+
+                    <div class="py-3 relative">
+                        <input type="text" placeholder="Date" class="px-4 py-4 w-96 bg-gray-100 font-normal text-lg placeholder-gray-400 rounded-xl outline-none">
+
+                        <div class="absolute inset-y-0 left-80 ml-6 flex items-center text-xl text-gray-600">
+                            <i data-feather="calendar"></i>
+                        </div>
+                    </div>
+
+                    <div class="py-3 relative">
+                        <input type="text" placeholder="Virtual Meeting" class="px-4 py-4 w-96 bg-gray-100 placeholder-gray-400 rounded-xl outline-none">
+
+                        <div class="absolute inset-y-0 left-80 ml-6 flex items-center text-xl text-gray-600">
+                            <i data-feather="chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="py-3">
+                        <button class="w-full py-4 font-semibold text-lg text-white bg-orange-700 rounded-xl hover:bg-orange-900 transition ease-in-out duration-500">Booking</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div> <!-- container.// -->
+
+    </section>
+    <!-- book section //end -->
+
+    <!-- footer -->
+    <footer class="bg-neutral-900 py-10 md:py-16">
+
+        <div class="container max-w-screen-xl mx-auto px-4">
+
+            <div class="flex flex-col lg:flex-row justify-between">
+                <div class="text-center lg:text-left mb-10 lg:mb-0">
+                    <div class="flex justify-center lg:justify-start mb-5">
+                        <img src="assets/image/tabtechmw.png" alt="Image" class="h-12">
+                    </div>
+
+                    <p class="font-light text-gray-400 text-xl mb-10">Implementing ICT Solutions </p>
+
+                    <div class="flex items-center justify-center lg:justify-start space-x-5">
+                        <a href="#" class="px-3 py-3 bg-gray-200 text-orange-700 rounded-full hover:bg-orange-800 hover:text-white transition ease-in-out duration-500">
+                            <i data-feather="facebook"></i>
+                        </a>
+
+                        <a href="#" class="px-3 py-3 bg-gray-200 text-orange-700 rounded-full hover:bg-orange-800 hover:text-white transition ease-in-out duration-500">
+                            <i data-feather="twitter"></i>
+                        </a>
+
+                        <a href="#" class="px-3 py-3 bg-gray-200 text-orange-700 rounded-full hover:bg-orange-800 hover:text-white transition ease-in-out duration-500">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="text-center lg:text-left mb-10 lg:mb-0">
+                    <h4 class="font-semibold text-orange-900 text-2xl mb-6">Sitemap</h4>
+
+                    <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Home</a>
+
+                    <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Features</a>
+                    
+                    <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Gallery</a>
+                    
+                    <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Testimoni</a>
+                    
+                    <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Book a meeting</a>
+                </div>
+
+                <div class="text-center lg:text-left mb-10 lg:mb-0">
+                    <h4 class="font-semibold text-orange-900 text-2xl mb-6">Landing</h4>
+
+                    <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Mobile App</a>
+
+                    <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Property</a>
+                    
+                    <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Personal Website</a>
+                    
+                    <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Web Developer</a>
+                    
+                    <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Online Course</a>
+
+                    <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Donation</a>
+                </div>
+
+                <div class="text-center lg:text-left">
+                    <h4 class="font-semibold text-orange-900 text-2xl mb-6">Utility</h4>
+
+                    <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">FAQ</a>
+
+                    <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Terms & Conditions</a>
+                </div>
+            </div>
+
+        </div> <!-- container.// -->
+
+    </footer>
+    <!-- footer //end -->
+
+    <script>
+        feather.replace()
+    </script>
+
+
+</body>
+</html>
